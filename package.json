@@ -11,8 +11,7 @@
     "url": "git+ssh://git@github.com/hotakasaito/hubot-healthcheck.git"
   },
   "keywords": [
-    "trello",
-    "github",
+    "healthcheck",
     "hubot-scripts"
   ],
   "author": "Hotaka Saito",
