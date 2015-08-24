@@ -1,7 +1,7 @@
 {
   "name": "hubot-healthcheck",
   "version": "0.0.1",
-  "description": "Trello to Github",
+  "description": "Healthcheck url",
   "main": "index.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,8 +23,6 @@
   "homepage": "https://github.com/hotakasaito/hubot-healthcheck#readme",
   "dependencies": {
     "agenda": "^0.6.28",
-    "app-root-path": "^1.0.0",
-    "bluebird": "^2.9.34",
     "request": "^2.61.0"
   }
 }
