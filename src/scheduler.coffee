@@ -14,6 +14,13 @@ fs     = require('fs')
 healthcheckConfig = JSON.parse(fs.readFileSync(process.env.APP_ROOT_PATH+'/config/healthcheck.json', 'utf8'))
 
 module.exports = (robot) ->
+  agenda.cancel {name: 'agenda:monitoring'}, (err, numRemoved) ->
+    if err
+      robot.logger.error err
+      robot.logger.error err.stack
+    else
+      robot.logger.info ">>> agenda:monitoring cancel: #{numRemoved}"
+
   agenda.define 'agenda:monitoring', (job, done) ->
     robot.logger.info 'monitoring...'
     robot.emit 'healthcheck:url', job.attrs.data.url
