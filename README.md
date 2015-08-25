@@ -2,6 +2,8 @@
 
 healthcheck url
 
+[![wercker status](https://app.wercker.com/status/95caf414fd8c02d26dfc1f41fce85d90/m "wercker status")](https://app.wercker.com/project/bykey/95caf414fd8c02d26dfc1f41fce85d90)
+
 ## Getting Started
 
 * Setup your hubot
