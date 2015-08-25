@@ -36,6 +36,7 @@ build:
           echo "npm version $(npm -v) running"
 
   after-steps:
-    - domudall/slack-notify:
-        token: $SLACK_TOKEN
+    - wantedly/pretty-slack-notify:
+        webhook_url: $SLACK_WEBHOOK_URL
         channel: general
+        username: psyclonebot
