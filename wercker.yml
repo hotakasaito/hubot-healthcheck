@@ -39,4 +39,3 @@ build:
     - slack-notifier:
         url: $SLACK_WEBHOOK_URL
         channel: general
-        username: psyclonebot
