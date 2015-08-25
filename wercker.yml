@@ -35,10 +35,6 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
 
-    - wercker/rvm-use@1.0.0:
-        - rvm-use:
-            version: 2.1.0-p0
-
   after-steps:
     - slack-notifier:
         url: $SLACK_WEBHOOK_URL
